@@ -1,7 +1,7 @@
-id=MMT-Ex
-name=Magisk Module Template Extended
-version=v2.0
-versionCode=10
-author=Zackptg5
-description=Magisk Module Template Extended
+id=mtk-t
+name=MTK Tweak
+version=v0.1
+versionCode=1
+author=danzfadlullah
+description=build.prop tweak for mtk devices
 updateJson=https://raw.githubusercontent.com/Zackptg5/MMT-Extended/master/update.json
