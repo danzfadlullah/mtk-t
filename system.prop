@@ -3,10 +3,6 @@
 # ro.sf.lcd_density=320
 
 
-# Dalvik hyperthreading
-persist.sys.dalvik.hyperthreading=true
-persist.sys.dalvik.multithread=true
-
 # Multi Touch
 ro.product.multi_touch_enabled=true
 ro.product.max_num_touch=10
@@ -82,6 +78,8 @@ debug.performance.tuning=1
 debug.egl.profiler=1
 debug.egl.hw=1
 debug.composition.type=gpu
+persist.sys.dalvik.hyperthreading=true
+persist.sys.dalvik.multithread=true
 
 # Optimize Game
 persist.vendor.dfps.level=120
