@@ -14,3 +14,8 @@ Tune your device performance by adding some tweak in build.prop
  <h3>Installation</h3>
  Flash in magisk
 </div>
+
+<div>
+ <h3>Thanks to :</h3>
+ <a href="https://github.com/Zackptg5">Zackptg5</a>
+</div>
