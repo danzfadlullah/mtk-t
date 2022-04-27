@@ -6,6 +6,7 @@
 - Magisk v24+
 
 <br>Work on some newer mtk devices and maybe work for other devices too...
+Just test it yourself...
 
 <br>**Installation**
 - Flash in magisk
