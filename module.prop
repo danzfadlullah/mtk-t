@@ -4,4 +4,4 @@ version=v0.1
 versionCode=1
 author=danzfadlullah
 description=build.prop tweak for mtk devices
-updateJson=https://raw.githubusercontent.com/danzfadlullah/mtk-t/master/update.json?token=GHSAT0AAAAAABT7A44WFHRZDDBQFDPR7FEYYTIUR3A
+updateJson=https://raw.githubusercontent.com/danzfadlullah/mtk-t/master/update.json
