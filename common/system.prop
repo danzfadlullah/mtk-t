@@ -59,17 +59,6 @@ sys.use_fifo_ui=1
 pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.shared=speed
 
-# Unlock FPS
-ro.product.system.model=M2102K1C
-ro.product.brand=xiaomi
-ro.product.device=star
-ro.product.brand=Xiaomi
-ro.product.manufacturer=Xiaomi
-ro.product.model=M2102K1C
-ro.product.odm.brand=Xiaomi
-ro.product.odm.manufacturer=Xiaomi
-ro.product.odm.model=M2102K1C
-
 # Fps Booster
 persist.sys.NV_FPSLIMIT=60
 persist.sys.NV_POWERMODE=1
