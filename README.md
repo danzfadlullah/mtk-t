@@ -6,7 +6,8 @@ Tune your device performance by adding some tweak in build.prop
 
 <div>
  <h3>Requirements</h3>
- Magisk v24+
+  <strong>Magisk v24+
+ Work on some mtk devices and maybe other devices too...
 </div>
 
 <div>
