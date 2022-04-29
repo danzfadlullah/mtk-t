@@ -106,6 +106,11 @@ prop_process() {
 }
 
 # Credits
+ui_print "*  *   *********   *        *******  *"
+ui_print "*  ** **   *   *  *            *     *"
+ui_print "*  * * *   *   **    ******    *     *"
+ui_print "*  *   *   *   * *             *     *"
+ui_print "*  *   *   *   *  *            *     *"
 ui_print "**************************************"
 ui_print "*          Made in Indonesia         *"
 ui_print "*credits:MMT Extended by Zackptg5@XDA*"
@@ -235,4 +240,5 @@ fi
 set_permissions
 
 # Complete install
+ui_print "Reboot to take changes..."
 cleanup
