@@ -47,7 +47,6 @@ ro.min_pointer_dur=8
 touch.deviceType=touchScreen
 
 #Improve global touch screen response
-debug.egl.hw=1
 video.accelerate.hw=1
 view.scroll_friction=0
 
@@ -77,8 +76,8 @@ debug.sf.hw=1
 debug.performance.tuning=1
 debug.egl.profiler=1
 debug.egl.hw=1
-debug.composition.type=c2d
-persist.sys.composition.type=c2d
+debug.composition.type=gpu
+persist.sys.composition.type=gpu
 persist.sys.dalvik.hyperthreading=true
 persist.sys.dalvik.multithread=true
 persist.radio.ramdump=0
@@ -98,13 +97,14 @@ ro.lmk.log_stats=false
 persist.sys.strictmode.disable=true
 debug.cpurend.vsync=false
 debug.sf.recomputecrop=0
+dalvik.vm.dexopt-flags=m=y
 
 # Optimize Game
-persist.vendor.dfps.level=120
+persist.vendor.dfps.level=60
 ro.vendor.cabc.enable=true
 ro.vendor.bcbc.enable=true
 persist.vendor.power.dfps.level=0
-ro.vendor.display.default_fps=120
+ro.vendor.display.default_fps=60
 vendor.display.use_layer_ext=0
 persist.vendor.vcb.ability=true
 persist.vendor.vcb.enable=true
@@ -120,6 +120,10 @@ ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.protected_contents=true
+debug.hwui.renderer=skiagl
+hw2d.force=1
+hw3d.force=1
+debug.enabletr=true
 
 # Doze parameters
 pm.sleep_mode=1
