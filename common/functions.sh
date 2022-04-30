@@ -106,6 +106,7 @@ prop_process() {
 }
 
 # Credits
+ui_print "**************************************"
 ui_print "*  *   *********   *        *******  *"
 ui_print "*  ** **   *   *  *            *     *"
 ui_print "*  * * *   *   **    ******    *     *"
@@ -240,5 +241,5 @@ fi
 set_permissions
 
 # Complete install
-ui_print "Reboot to take changes..."
+ui_print "- Reboot to take changes..."
 cleanup
