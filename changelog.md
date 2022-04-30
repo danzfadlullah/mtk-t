@@ -1,4 +1,8 @@
-**v1.1**
+**v1.2**
+- Fixed bug by removing some tweaks on build.prop
+
+
+<br>**v1.1**
 - Fixed a bug by changing some tweaks on build.prop
 - Added some new build.prop tweaks
 
