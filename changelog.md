@@ -1,4 +1,8 @@
-**v1.2**
+**v2.0**
+- Major Improvement
+- Reduce heat
+
+<br>**v1.2**
 - Fixed bug by removing some tweaks on build.prop
 
 

@@ -1,54 +1,14 @@
 # This file will be read by resetprop
 # Example: Change dpi
-# ro.sf.lcd_density=320
+#ro.sf.lcd_density=320
 
-
-# Multi Touch
-ro.product.multi_touch_enabled=true
-ro.product.max_num_touch=10
-
-# Touch response
-touch.pressure.scale=0.0001
-view.scroll_friction=10
-touch.size.calibration=geometric
-touch.pressure.calibration=amplitude
-touch.size.scale=1
-touch.size.bias=0
-touch.size.isSummed=0
-touch.orientation.calibration=interpolated
-touch.distance.calibration=area
-touch.distance.scale=0
-touch.coverage.calibration=box
-touch.gestureMode=spots
-MultitouchMinDistance=1px
-MultitouchSettleInterval=0.1ms
-TapInterval=0.1ms
-TapSlop=1px
-windowsmgr.max_events_per_sec=180
-ro.min_pointer_dur=4
-ro.max.fling_velocity=18000
-ro.min.fling_velocity=6000
-ro.product.multi_touch_enabled=true
-ro.product.max_num_touch=10
-ro.securestorage.knox=false
-security.mdpp=none
-security.mdpp.result=none
-af.resampler.quality=255
-persist.sys.scrollingcache=3
-persist.af.resampler.quality=255
-persist.dev.pm.dyn_samplingrate=1
-persist.service.lgospd.enable=0
-persist.service.pcsync.enable=0
 
 #Improve sliding response
-windowsmgr.max_events_per_sec=90
-view.scroll_friction=0
-ro.min_pointer_dur=8
+windowsmgr.max_events_per_sec=60
 touch.deviceType=touchScreen
 
 #Improve global touch screen response
 video.accelerate.hw=1
-view.scroll_friction=0
 
 #Open the first-in-first-out interface thread
 sys.use_fifo_ui=1
@@ -56,7 +16,14 @@ pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.shared=speed
 
 # Fps Booster
-persist.sys.NV_FPSLIMIT=60
+ro.vendor.smart_dfps=disable
+ro.vendor.dfps=disable
+stable.fps.enable=True
+dont.lower.fps=True
+stabilizer.fps=True
+ro.vendor.dfps.enable=false
+ro.vendor.smart_dfps.enable=false
+persist.sys.NV_FPSLIMIT=144
 persist.sys.NV_POWERMODE=1
 persist.sys.NV_PROFVER=15
 persist.sys.NV_STEREOCTRL=0
@@ -76,7 +43,7 @@ debug.sf.hw=1
 debug.performance.tuning=1
 debug.egl.profiler=1
 debug.egl.hw=1
-debug.composition.type=gpu
+debug.composition.type=skiagl
 persist.sys.composition.type=gpu
 persist.radio.ramdump=0
 persist.sys.ssr.enable_ramdumps=0
@@ -96,6 +63,68 @@ persist.sys.strictmode.disable=true
 debug.cpurend.vsync=false
 debug.sf.recomputecrop=0
 dalvik.vm.dexopt-flags=m=y
+debug.overlayui.enable=1
+debug.performance.ering=1
+debug.gr.numframebuffers=3
+debug.kill_allocating_task=0
+ro.secure=0
+persist.sys.ui.hw=1
+persist.sys.use_16bpp_alpha=1
+persist.sys.force_sw_gles=1
+persist.sys.use_dithering=1
+ro.config.disable.hw_accel=false
+ro.config.enable.hw_accel=true
+ro.product.gpu.driver=1
+ro.fb.mode=1
+ro.vold.umsdirtyratio=20
+ro.sf.compbypass.enable=0
+debug.egl.swapinterval=-60
+logd.kernel=true
+persist.logd.kernel=true
+persist.logd.size=1024k
+ro.cpufreq.game=1
+ENFORCE_PROCESS_LIMIT=false
+MAX_SERVICE_INACTIVITY=false
+CONTENT_APP_IDLE_OFFSET=false
+EMPTY_APP_IDLE_OFFSET=false
+MAX_ACTIVITIES=false
+ACTIVITY_INACTIVITY_RESET_TIME=false
+MAX_RECENT_TASKS=false
+MIN_RECENT_TASKS=false
+APP_SWITCH_DELAY_TIME=false
+MAX_PROCESSES=false
+PROC_START_TIMEOUT=false
+CPU_MIN_CHECK_DURATION=false
+GC_TIMEOUT=false
+SERVICE_TIMEOUT=false
+MIN_CRASH_INTERVAL=false
+cgroup_disable=memory
+config.disable_consumerir=true
+ro.zygote.preload.enable=0
+ro.zygote.preload.disable=1
+persist.sys.autoclearsave=3
+persist.preload.common=1
+persist.zygote.preload_threads=3
+Bringup debug.gralloc.gfx_ubwc_disable=0
+persist.sys.force_sw_gles=0
+persist.radio.atfwd.start=true
+ro.kernel.qemu.gles=0 
+sdm.debug.disable_scalar=0
+sdm.debug.disable_inline_rotator=1
+sdm.debug.disable_inline_rotator_secure=1
+sdm.debug.prefersplit=1
+sdm.debug.disable_dest_sc=1
+sys.disable_ext_animation=1
+sdm.debug.disable_p Partial_split=1
+persist.sys.ssr.restart_level=1
+persist.sys.ap.restart_level=1
+persist.cpu.gov.performance=performance
+persist.cpu.gov.performance=1
+vendor.debug.egl.swapinterval=1
+persist.sys.egl.swapinterval=1
+debug.gr.swapinterval=1
+vendor.debug.gr.swapinterval=1
+persist.sys.debug.gr.swapinterval=1
 
 # Optimize Game
 persist.vendor.dfps.level=60
@@ -108,6 +137,28 @@ persist.vendor.vcb.ability=true
 persist.vendor.vcb.enable=true
 vendor.display.enable_optimize_refresh=1
 vendor.display.enable_optimize_refresh=true
+persist.sys.dalvik.hyperthreading=true
+persist.sys.dalvik.multithread=true
+ro.surface_flinger.use_color_management=true
+ro.vendor.qti.sys.fw.bservice_enable=true
+debug.sqlite.journalmode=WAL
+debug.sqlite.syncmode=1
+debug.sf.showupdates=0
+debug.sf.showcpu=0
+debug.sf.showbackground=0
+debug.sf.showfps=0
+persist.vendor.ssr.enable_ramdumps=0
+persist.sys.lmk.reportkills=false
+persist.added_boot_bgservices=3
+debug.egl.buffcount=4
+ro.vendor.touchfeature.gamemode.enable=true
+sys.config.spcm_enable=false
+sys.config.spcm_kill_skip=true
+sys.config.samp_spcm_enable=false
+sys.config.spcm_db_enable=false
+sys.config.spcm_db_launcher=false
+sys.config.spcm_preload_enable=false
+sys.config.spcm_gcm_kill_enable=false
 
 # Graphic properties
 persist.demo.hdmirotationlock=false
@@ -122,9 +173,6 @@ debug.hwui.renderer=skiagl
 hw2d.force=1
 hw3d.force=1
 debug.enabletr=true
-
-# Doze parameters
-pm.sleep_mode=1
 
 # Doze
 doze.display.supported=true
@@ -144,60 +192,56 @@ doze.shake.acc.threshold=10
 doze.vibrate.sigmotion=0
 debug.doze.component=0
 
-# SystemUI
-ro.config.fha_enable=true
-ro.sys.fw.bg_apps_limit=32
-ro.config.dha_cached_max=16
-ro.config.dha_empty_max=42
-ro.config.dha_empty_init=32
-ro.config.dha_lmk_scale=0.545
-ro.config.dha_th_rate=2.3
-ro.config.sdha_apps_bg_max=64
-ro.config.sdha_apps_bg_min=8
-ro.HOME_APP_ADJ=1
-
 # Smoothens UI
 persist.service.lgospd.enable=0
 persist.service.pcsync.enable=0
-ro.mtk_perf_simple_start_win=1
-ro.mtk_perf_fast_start_win=1
-ro.mtk_perf_response_time=1
+ro.HOME_APP_ADJ=1
+ro.hwui.disable_scissor_opt=false
+ro.zygote.disable_gl_preload=false
+ro.hwui.texture_cache_size=24
+ro.hwui.layer_cache_size=16
+ro.hwui.gradient_cache_size=0.5
+ro.hwui.patch_cache_size=128
+ro.hwui.path_cache_size=4
+ro.hwui.shape_cache_size=1
+ro.hwui.drop_shadow_cache_size=2
+ro.hwui.r_buffer_cache_size=2
+ro.hwui.texture_cache_flush_rate=0.6
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=256
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=512
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.fbo_cache_size=0
+hwui.text_gamma=1.4
+hwui.text_gamma.black_threshold=64
+hwui.text_gamma.white_threshold=192
+hwui.use_gpu_pixel_buffers=true
+config.disable_rtt=true
+debug.hwui.enable_bp_cache=false
+sys.enable.smart_on_display=0
+sys.preactivated.smart_on_display=0
+sys.enable.smart_on_doze=0
 
-# Signal Boost
-bt.max.hfpclient.connections=1
+# Ims debug
+persist.dpm.feature=0
+persist.ims.disableADBLogs=1
+persist.ims.disableQXDMLogs=1
+persist.ims.disableIMSLogs=1
+persist.vendor.ims.disableUserAgent=1
+persist.ims.disableDebugLogs=1
 
-# Open the first-in-first-out interface thread
-ro.telephony.call_ring.delay=0
-ring.delay=0
+# System tweak
+debug.bt.lowspeed=true
+persist.sys.strictmode.disable=true
+ro.config.hw.logsystem.send=0
 
 #Turn off vertical sync (V-Sync)
 debug.hwui.disable_vsync=true
 hwui.disable_vsync=true
 
-# Internet Tweaks
-ro.ril.hsxpa=2
-ro.ril.hspa=2
-ro.ril.lte=2
-ro.ril.ltea=2
-ro.ril.hep=0
-ro.ril.def.agps.mode=2
-ro.ril.enable.3g.prefix=1
-ro.ril.enable.4g.prefix=1
-ro.ril.htcmaskw1.bitmask=4294967295
-ro.ril.htcmaskw1=14449
-ro.ril.enable.dtm=1
-ro.ril.hspaclass=15
-ro.ril.lteclass=15
-ro.ril.gprsclass=15
-ro.ril.hsupa.category=10
-ro.ril.hsdpa.category=30
-ro.ril.lte.category=10
-ro.ril.ltea.category=30
-ro.ril.enable.a51=1
-ro.ril.enable.a52=1
-ro.ril.enable.a53=1
-ro.ril.enable.a54=1
-ro.ril.enable.a55=1
+# Smart charging
+ro.build.smartcharging=1
 
 # Data Speed Tweaks
 # Must be supported by network - AT&T supports this. Allows downloading and talking at the same time.
@@ -255,25 +299,16 @@ net.tethering.noprovisioning=true
 wifi.supplicant_scan_interval=180
 persist.wpa_supplicant.debug=0
 
-# Signal Tweaks
-persist.cust.tel.eons=1 
-ro.config.combined_signal=true
-telephony.lteOnCdmaDevice=1
-ro.telephony.default_network=33,33
-
-# SMS APN Retry
-ro.gsm.2nd_data_retry_config=max/_retries=3, 2000, 2000, 2000
-
+# Faster Streming
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-rtsp=true
+media.stagefright.enable-record=false
 # Support For IPV4 and IPV6
 persist.telephony.support.ipv6=0
 persist.telephony.support.ipv4=1
 
 # Better call voice quality
 ro.ril.enable.amr.wideband=1
-
-# Internet Tweaks
-net.tcp.buffersize.default=4096,87380,256960, 4096, 16384,256960
-net.tcp.buffersize.wifi=4096,87380,256960,409 6,163 84,256960
-net.tcp.buffersize.umts=4096,8 7380,256960,4096,163 84,256960
-net.tcp.buffersize.gprs=4096,8 7380,256960,4096,163 84,256960
-net.tcp.buffersize.edge=4096,8 7380,256960,4096,163
