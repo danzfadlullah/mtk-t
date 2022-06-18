@@ -1,314 +1,100 @@
-# This file will be read by resetprop
-# Example: Change dpi
-#ro.sf.lcd_density=320
+# MTK TWEAK by DanZFadlullah
 
-
-#Improve sliding response
-windowsmgr.max_events_per_sec=60
-touch.deviceType=touchScreen
-
-#Improve global touch screen response
+ro.config.hw_quickpoweron=true
+boot.fps=25
+debug.sf.nobootanimation=1
+ring.delay=0
+wifi.supplicant_scan_interval=120
+pm.sleep_mode=1
+power_supply.wakeup=enable
+debug.enabletr=true
+debug.qctwa.preservebuf=1
+dev.pm.dyn_samplingrate=1
 video.accelerate.hw=1
-
-#Open the first-in-first-out interface thread
-sys.use_fifo_ui=1
-pm.dexopt.bg-dexopt=speed-profile
-pm.dexopt.shared=speed
-
-# Fps Booster
-ro.vendor.smart_dfps=disable
-ro.vendor.dfps=disable
-stable.fps.enable=True
-dont.lower.fps=True
-stabilizer.fps=True
-ro.vendor.dfps.enable=false
-ro.vendor.smart_dfps.enable=false
-persist.sys.NV_FPSLIMIT=144
-persist.sys.NV_POWERMODE=1
-persist.sys.NV_PROFVER=15
-persist.sys.NV_STEREOCTRL=0
-persist.sys.NV_STEREOSEPCHG=0
-persist.sys.NV_STEREOSEP=20
-persist.sys.purgeable_assets=1
-
-# Speed
-pm.dexopt.first-boot=speed
-pm.dexopt.install=speed
-pm.dexopt.bg-dexopt=speed
-pm.dexopt.boot=speed
-
-# Performance
-debug.sf.latch_unsignaled=1
-debug.sf.hw=1
-debug.performance.tuning=1
-debug.egl.profiler=1
-debug.egl.hw=1
-debug.composition.type=skiagl
-persist.sys.composition.type=gpu
-persist.radio.ramdump=0
-persist.sys.ssr.enable_ramdumps=0
-dalvik.vm.checkjni=0
-dalvik.vm.checkjni=false
-dalvik.vm.check-dex-sum=false
-dalvik.vm.verify-bytecode=false
-libc.debug.malloc=0
-debug.atrace.tags.enableflags=0
-persist.traced.enable=0
-vidc.debug.level=0
-debug.mdpcomp.logs=0
-ro.kernel.android.checkjni=0
-debug.hwui.render_dirty_regions=false
-ro.lmk.log_stats=false
-persist.sys.strictmode.disable=true
-debug.cpurend.vsync=false
-debug.sf.recomputecrop=0
-dalvik.vm.dexopt-flags=m=y
 debug.overlayui.enable=1
-debug.performance.ering=1
-debug.gr.numframebuffers=3
-debug.kill_allocating_task=0
-ro.secure=0
-persist.sys.ui.hw=1
-persist.sys.use_16bpp_alpha=1
-persist.sys.force_sw_gles=1
-persist.sys.use_dithering=1
-ro.config.disable.hw_accel=false
-ro.config.enable.hw_accel=true
-ro.product.gpu.driver=1
-ro.fb.mode=1
-ro.vold.umsdirtyratio=20
-ro.sf.compbypass.enable=0
-debug.egl.swapinterval=-60
-logd.kernel=true
-persist.logd.kernel=true
-persist.logd.size=1024k
-ro.cpufreq.game=1
-ENFORCE_PROCESS_LIMIT=false
-MAX_SERVICE_INACTIVITY=false
-CONTENT_APP_IDLE_OFFSET=false
-EMPTY_APP_IDLE_OFFSET=false
-MAX_ACTIVITIES=false
-ACTIVITY_INACTIVITY_RESET_TIME=false
-MAX_RECENT_TASKS=false
-MIN_RECENT_TASKS=false
-APP_SWITCH_DELAY_TIME=false
-MAX_PROCESSES=false
-PROC_START_TIMEOUT=false
-CPU_MIN_CHECK_DURATION=false
-GC_TIMEOUT=false
-SERVICE_TIMEOUT=false
-MIN_CRASH_INTERVAL=false
-cgroup_disable=memory
-config.disable_consumerir=true
-ro.zygote.preload.enable=0
-ro.zygote.preload.disable=1
-persist.sys.autoclearsave=3
-persist.preload.common=1
-persist.zygote.preload_threads=3
-Bringup debug.gralloc.gfx_ubwc_disable=0
-persist.sys.force_sw_gles=0
-persist.radio.atfwd.start=true
-ro.kernel.qemu.gles=0 
-sdm.debug.disable_scalar=0
-sdm.debug.disable_inline_rotator=1
-sdm.debug.disable_inline_rotator_secure=1
-sdm.debug.prefersplit=1
-sdm.debug.disable_dest_sc=1
-sys.disable_ext_animation=1
-sdm.debug.disable_p Partial_split=1
-persist.sys.ssr.restart_level=1
-persist.sys.ap.restart_level=1
-persist.cpu.gov.performance=performance
-persist.cpu.gov.performance=1
-vendor.debug.egl.swapinterval=1
-persist.sys.egl.swapinterval=1
-debug.gr.swapinterval=1
-vendor.debug.gr.swapinterval=1
-persist.sys.debug.gr.swapinterval=1
-
-# Optimize Game
-persist.vendor.dfps.level=60
-ro.vendor.cabc.enable=true
-ro.vendor.bcbc.enable=true
-persist.vendor.power.dfps.level=0
-ro.vendor.display.default_fps=60
-vendor.display.use_layer_ext=0
-persist.vendor.vcb.ability=true
-persist.vendor.vcb.enable=true
-vendor.display.enable_optimize_refresh=1
-vendor.display.enable_optimize_refresh=true
+debug.egl.hw=1
+debug.sf.hw=1
+debug.composition.type=c2d
+debug.composition.type=gpu
+debug.performance.tuning=1
+windowsmgr.max_events_per_sec=100
+fod_animation_type=4
+logcat.live=disable
 persist.sys.dalvik.hyperthreading=true
 persist.sys.dalvik.multithread=true
-ro.surface_flinger.use_color_management=true
-ro.vendor.qti.sys.fw.bservice_enable=true
-debug.sqlite.journalmode=WAL
-debug.sqlite.syncmode=1
-debug.sf.showupdates=0
-debug.sf.showcpu=0
-debug.sf.showbackground=0
-debug.sf.showfps=0
-persist.vendor.ssr.enable_ramdumps=0
-persist.sys.lmk.reportkills=false
-persist.added_boot_bgservices=3
-debug.egl.buffcount=4
-ro.vendor.touchfeature.gamemode.enable=true
-sys.config.spcm_enable=false
-sys.config.spcm_kill_skip=true
-sys.config.samp_spcm_enable=false
-sys.config.spcm_db_enable=false
-sys.config.spcm_db_launcher=false
-sys.config.spcm_preload_enable=false
-sys.config.spcm_gcm_kill_enable=false
-
-# Graphic properties
-persist.demo.hdmirotationlock=false
-persist.hwc.enable_vds=1
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.has_HDR_display=true
-ro.surface_flinger.has_wide_color_display=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
-ro.surface_flinger.max_virtual_display_dimension=4096
-ro.surface_flinger.protected_contents=true
-debug.hwui.renderer=skiagl
-hw2d.force=1
+af.resampler.quality=255
+mpq.audio.decode=true
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hspa=6144,87380,524288,6144,16384,262144
+net.tcp.buffersize.lte=524288,1048576,2097152,5242 88,1048576,2097152
+net.tcp.buffersize.hsdpa=6144,87380,1048576,6144,8 7380,1048576
+net.tcp.buffersize.evdo_b=6144,87380,1048576,6144,87380,1048576
+net.dns1=9.9.9.9
+net.dns2=149.112.112.112
+net.dns3=1.1.1.1
+net.dns4=1.0.0.1
+net.wlan0.dns1=9.9.9.9
+net.wlan0.dns2=149.112.112.112
+net.wlan0.dns3=1.1.1.1
+net.wlan0.dns4=1.0.0.1
+net.eth0.dns1=9.9.9.9
+net.eth0.dns2=149.112.112.112
+net.eth0.dns3=1.1.1.1
+net.eth0.dns4=1.0.0.1
+net.wcdma.dns1=9.9.9.9
+net.wcdma.dns2=149.112.112.112
+net.wcdma.dns3=1.1.1.1
+net.wcdma.dns4=1.0.0.1
+net.hspa.dns1=9.9.9.9
+net.hspa.dns2=149.112.112.112
+net.hspa.dns3=1.1.1.1
+net.hspa.dns4=1.0.0.1
+net.lte.dns1=9.9.9.9
+net.lte.dns2=149.112.112.112
+net.lte.dns3=1.1.1.1
+net.lte.dns4=1.0.0.1
+net.ltea.dns1=9.9.9.9
+net.ltea.dns2=149.112.112.112
+net.ltea.dns3=1.1.1.1
+net.ltea.dns4=1.0.0.1
 hw3d.force=1
-debug.enabletr=true
-
-# Doze
-doze.display.supported=true
-doze.pulse.notifications=true
-doze.use.accelerometer=0
-doze.pickup.vibration.threshold=2000
-doze.pulse.brightness=5
-doze.pulse.delay.in=200
-doze.pulse.duration.in=1000
-doze.pulse.duration.out=1000
-doze.pulse.duration.visible=3000
-doze.pulse.proxcheck=0
-doze.pulse.schedule=1s,10s,30s,60s,120s,180s
-doze.pulse.schedule.resets=3
-doze.pulse.sigmotion=0
-doze.shake.acc.threshold=10
-doze.vibrate.sigmotion=0
-debug.doze.component=0
-
-# Smoothens UI
-persist.service.lgospd.enable=0
-persist.service.pcsync.enable=0
-ro.HOME_APP_ADJ=1
-ro.hwui.disable_scissor_opt=false
-ro.zygote.disable_gl_preload=false
-ro.hwui.texture_cache_size=24
-ro.hwui.layer_cache_size=16
-ro.hwui.gradient_cache_size=0.5
-ro.hwui.patch_cache_size=128
-ro.hwui.path_cache_size=4
-ro.hwui.shape_cache_size=1
-ro.hwui.drop_shadow_cache_size=2
-ro.hwui.r_buffer_cache_size=2
-ro.hwui.texture_cache_flush_rate=0.6
-ro.hwui.text_small_cache_width=1024
-ro.hwui.text_small_cache_height=256
-ro.hwui.text_large_cache_width=2048
-ro.hwui.text_large_cache_height=512
-ro.hwui.r_buffer_cache_size=8
-ro.hwui.fbo_cache_size=0
-hwui.text_gamma=1.4
-hwui.text_gamma.black_threshold=64
-hwui.text_gamma.white_threshold=192
-hwui.use_gpu_pixel_buffers=true
-config.disable_rtt=true
-debug.hwui.enable_bp_cache=false
-sys.enable.smart_on_display=0
-sys.preactivated.smart_on_display=0
-sys.enable.smart_on_doze=0
-
-# Ims debug
-persist.dpm.feature=0
-persist.ims.disableADBLogs=1
-persist.ims.disableQXDMLogs=1
-persist.ims.disableIMSLogs=1
-persist.vendor.ims.disableUserAgent=1
-persist.ims.disableDebugLogs=1
-
-# System tweak
-debug.bt.lowspeed=true
-persist.sys.strictmode.disable=true
-ro.config.hw.logsystem.send=0
-
-#Turn off vertical sync (V-Sync)
-debug.hwui.disable_vsync=true
+hwui.render_dirty_regions=false
 hwui.disable_vsync=true
-
-# Smart charging
-ro.build.smartcharging=1
-
-# Data Speed Tweaks
-# Must be supported by network - AT&T supports this. Allows downloading and talking at the same time.
-ro.ril.enable.dtm=1
-# gprs (edge) speed settings
-ro.ril.gprsclass=34
-# HSPA+ Download speed settings by category. Cat 28 is the highest
-ro.ril.hsdpa.category=28
-# HSPA+ Upload speed settings by category. Cat 9 is highest, 7 seems to work just fine.
-ro.ril.hsupa.category=8
-# setting to enable hspa+ for the upload and download
-ro.ril.hsxpa=5
-# Other Setting
-ro.ril.transmitpower=true
-ro.ril.hep=1
-ro.ril.def.agps.feature=1
-ro.ril.enable.a52=1
-ro.ril.enable.a53=1
-ro.ril.enable.3g.prefix=1
-
-# Wireless + TCP Speed & Security Tweaks
-net.core.wmem_max=1048576
-net.core.rmem_max=1048576
-net.core.rmem_default=262144
-net.core.wmem_default=262144
-net.core.optmem_max=20480
-net.unix.max_dgram_qlen=50
-net.ipv4.tcp_ecn=0
-net.ipv4.route.flush=1
-net.ipv4.tcp_rfc1337=1
-net.ipv4.ip_no_pmtu_disc=0
-net.ipv4.tcp_sack=1
-net.ipv4.tcp_fack=1
-net.ipv4.tcp_window_scaling=1
-net.ipv4.tcp_timestamps=1
-net.ipv4.tcp_rmem=4096 39000 187000
-net.ipv4.tcp_wmem=4096 39000 187000
-net.ipv4.tcp_mem=187000 187000 187000
-net.ipv4.tcp_no_metrics_save=1
-net.ipv4.tcp_moderate_rcvbuf=1
-net.ipv6.tcp_ecn=0
-net.ipv6.route.flush=1
-net.ipv6.tcp_rfc1337=1
-net.ipv6.ip_no_pmtu_disc=0
-net.ipv6.tcp_sack=1
-net.ipv6.tcp_fack=1
-net.ipv6.tcp_window_scaling=1
-net.ipv6.tcp_timestamps=1
-net.ipv6.tcp_rmem=4096 39000 187000
-net.ipv6.tcp_wmem=4096 39000 187000
-net.ipv6.tcp_mem=187000 187000 187000
-net.ipv6.tcp_no_metrics_save=1
-net.ipv6.tcp_moderate_rcvbuf=1
-net.tethering.noprovisioning=true
-wifi.supplicant_scan_interval=180
-persist.wpa_supplicant.debug=0
-
-# Faster Streming
+touch.presure.scale=0.001
+debug.egl.profiler=1
+dalvik.vm.checkjni=false
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapgrowthlimit=48m
+dalvik.vm.heapsize=64m
+dalvik.vm.verify-bytecode=false
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.lockprof.threshold=250
+dalvik.vm.dexopt-flags=m=v,o=y
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.jmiopts=forcecopy
 media.stagefright.enable-player=true
 media.stagefright.enable-meta=true
 media.stagefright.enable-scan=true
 media.stagefright.enable-http=true
-media.stagefright.enable-rtsp=true
-media.stagefright.enable-record=false
-# Support For IPV4 and IPV6
-persist.telephony.support.ipv6=0
-persist.telephony.support.ipv4=1
-
-# Better call voice quality
-ro.ril.enable.amr.wideband=1
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-record=true
+net.ipv4.ip_no_pmtu_disc=0
+net.ipv4.route.flush=1
+net.ipv4.tcp_ecn=0
+net.ipv4.tcp_fack=1
+net.ipv4.tcp_mem=187000 187000 187000
+net.ipv4.tcp_moderate_rcvbuf=1
+net.ipv4.tcp_no_metrics_save=1
+net.ipv4.tcp_rfc1337=1
+net.ipv4.tcp_rmem=4096 39000 187000
+net.ipv4.tcp_sack=1
+net.ipv4.tcp_timestamps=1
+net.ipv4.tcp_window_scaling=1
+net.ipv4.tcp_wmem=4096 39000 18700
+debug.gr.swapinterval=0
