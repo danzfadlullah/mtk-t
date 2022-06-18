@@ -1,7 +1,7 @@
 id=mtk-t
 name=MTK Tweak
-version=v2.0
-versionCode=20
+version=v3.0
+versionCode=30
 author=danzfadlullah
 description=build.prop tweak for mtk devices
 updateJson=https://raw.githubusercontent.com/danzfadlullah/mtk-t/master/update.json
