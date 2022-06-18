@@ -1,4 +1,8 @@
-**v2.0**
+**v3.0**
+- Major changes
+- Tweaks that are now simpler but more powerful
+
+<br>**v2.0**
 - Major Improvement
 - Reduce heat
 
