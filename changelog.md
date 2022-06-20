@@ -1,4 +1,7 @@
-**v3.0**
+**v3.1**
+- Bug fix
+
+<br>**v3.0**
 - Major changes
 - Tweaks that are now simpler but more powerful
 
