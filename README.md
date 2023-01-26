@@ -12,7 +12,7 @@ Just test it yourself...
 - Flash in magisk
 
 <br>**Thanks to :**
-- <a href="https://github.com/Zackptg5">Zackptg5</a>
+- <a href="https://github.com/Zackptg5">Zackptg5</a> for template
 
 
 
